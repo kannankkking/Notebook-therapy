@@ -108,12 +108,13 @@
     display: flex;
     /* justify-content: space-between; */
     flex-wrap: wrap;
-    flex-grow: 1;
-    flex-basis: 20%;
+   
     justify-content: center;
     gap: 10px;
 }
 .set1{
+    flex-grow: 1;
+    flex-basis: 30%;
     width: 400px;
     text-align: center;
 }
@@ -181,6 +182,16 @@
         background-image: url("../images/section4_4.jpeg");
     }
 }
+.section5{
+    display: flex;
+    flex-wrap: wrap;
+}
+.set4{
+    flex-grow: 1;
+    flex-basis: 30%;
+    width: 400px;
+    text-align: center;
+}
 
 .august{
    margin: 50px;
@@ -227,7 +238,6 @@
     width: 100%;
     height: 370px;
     position: relative;
-    /* border-top: 1px solid gray; */
     background-color:rgb(233, 233, 233); 
     margin-top: 30px;
     overflow: hidden;
@@ -240,6 +250,7 @@
    top: 20px;
    display: flex;
    gap: 20px;
+   color: black;
 }
 .footer_s1{
     position: absolute;
@@ -301,8 +312,6 @@
         width: 100%;
         height: 100%;
         overflow-x: hidden;
-        
-    
      }
     .section2{
     display: flex;
@@ -331,14 +340,21 @@
     left: 8px;
     align-items: center;
    }
-   .set1{
-    width: 180px;
-    margin-right: 40px;
+    .set1{
+        flex-grow: 1;
+        flex-basis: 40%;
+    }
+   .set4{
+    flex-grow: 1;
+    flex-basis: 40%;
    }
    .set1 img{
     width: 180px;
     height: 180px;
-    
+   }
+   .set4 img{
+    width: 180px;
+    height: 180px;
    }
    .section1 h3{
     margin-right: 100px;
@@ -356,6 +372,7 @@
    }
   .section5{
     display: flex;
+    flex-wrap: wrap;
   }
   .buton{
     position: relative;
@@ -368,11 +385,12 @@
   .section5{
     position: relative;
     bottom: 100px;
+    left: 1px;
   }
-  .set4{
+  /* .set4{
     width: 180px;
     margin-right: 40px;
-   }
+   } */
    .set4 img{
     width: 180px;
     height: 180px;
@@ -386,7 +404,8 @@
    }
  .icons{
    position: relative;
-   left: 10px;
+   left: 6px;
+   font-size: 20px;
 
  }
    .mail{
@@ -414,7 +433,46 @@
     overflow-x: hidden;
     overflow: hidden;
 
+
    }
 
- 
+
+}
+@media screen and (max-width:900px) and (min-width:481px){
+    .hero img{
+        width: 100%;
+    }
+    .hero{
+        position: relative;
+       }
+       .hero button{
+        width:250px;
+        font-size: 12px;
+        height: 50px;
+        position: absolute;
+        top:220px;
+        background-color: chocolate;
+       }
+       .navbar__s3{
+        margin-right: 10px;
+       }
+    .section1 h3{
+        position: relative;
+        left: 30%;
+    }
+     .set3{
+        position: relative;
+        left: 10px;
+     }
+     .post img{
+        position: relative;
+        right: 70px;
+     }
+     .mail button{
+        position: relative;
+        right: 0px;
+        left: 55%;
+        cursor: pointer;
+     }
+     
 }

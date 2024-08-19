@@ -84,7 +84,7 @@ const Home = () => {
 
 {/* section1 */}
 <div className={styles.section1}>
-  <h3>NEW COLLECCTION</h3>
+  <h3>NEW COLLECTION</h3>
   <h1>Panda Friends Collection 🐼</h1>
   <p>Celebrate the playful spriit of pandas with our Tsuki <span>panda Friends collection. </span>Perfect for those who find delight in every paw print and playful moment</p>
   <p>15% off when you buy 2+ Panda Friends items 🐼</p>
@@ -369,7 +369,8 @@ const Home = () => {
 </div>
 <div className={styles.mail}>
   <h3>Join for special Updates & Discounts</h3>
-  <input type='mail'placeholder='Enter your email address'/><button>Submit</button>
+  <input type='mail'placeholder='Enter your email address'/>
+  <button>Submit</button>
 </div>
 
 </div>
