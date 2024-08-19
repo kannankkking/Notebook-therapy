@@ -1,0 +1,261 @@
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color:azure;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+.navbar__s1{
+    display: flex;
+    position: relative;
+   align-items: center;
+   font-size: 20px;
+}
+.navbar__search{
+    position: relative;
+    right: 150px;
+    align-items: center;
+    font-size: 20px;
+}
+.navbar__s1_input input{
+    width: 700px;
+    height: 30px;
+    display: none;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid black;
+    position: absolute;
+    top: 100px;
+}
+.navbar__search:hover .navbar__s1_input input{
+    display: block;
+    top: 25px;
+
+}
+.navbar__s2 h2{
+    margin-right: 220px;
+    font-style: italic;
+}
+.navbar__s3{
+    position: relative;
+    cursor: pointer;
+    
+}
+.cart{
+    background-color: aliceblue;
+    border: 1px solid black;
+    display: none;
+    position: absolute;
+    right: 0;
+    top:30px;
+    width: 100px;
+    padding: 10px;
+    z-index: 1;
+}
+.navbar__s3:hover .cart{
+    display: block;
+}
+.section1 img{
+    width: 40%;
+    position: relative;
+    left: 48%;
+    height: auto;
+    align-items: center;
+    margin-left: 150px;
+}
+.section1 p{
+    font-size: 30px;
+    position: absolute;
+    bottom: 450px;
+}
+.section1 span{
+    font-size: 20px;
+    color: rgb(255, 15, 55);
+    position: absolute;
+    bottom: 400px;
+    left: 50px;
+}
+.section1 button{
+    background-color: rgb(212, 96, 115);
+    color:#fff;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 300px;
+    left: 3%;
+    width: 50%;
+    cursor: pointer;
+    border: none;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 60%;
+    margin: 10px;
+}
+.section2 img{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap:20px;
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    height: 370px;
+    position: relative;
+    /* border-top: 1px solid gray; */
+    background-color:rgb(233, 233, 233); 
+    margin-top: 30px;
+    overflow: hidden;
+    
+}
+.icons{
+   font-size: 30px;
+   position: relative;
+   left: 60px;
+   top: 20px;
+   display: flex;
+   gap: 20px;
+}
+.footer_s1{
+    position: absolute;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer_s2{
+    position: absolute;
+    left: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.mail{
+    position: relative;
+}
+.mail input::placeholder{
+    font-size: 20px;
+}
+.mail input{
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    outline: none;
+}
+.mail h3{
+    position: absolute;
+    top: 270px;
+    left: 150px;
+}
+.mail button{
+    position: absolute;
+    top: 300px;
+    left: 48%;
+    width: 200px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(250, 101, 126);
+    color: white;
+}
+
+
+@media screen and (max-width:480px){
+    .section1 img{
+        width: 400px;
+        height: 400px;
+        position: relative;
+        left: -24%;
+      
+    }
+    .navbar__s3{
+        margin-right: 10px;
+    }
+    /* .navbar__s2 h2{
+        font-size: 16px;
+        font-weight: 700;
+        margin-left: 10px;
+    } */
+    .section1{
+        position: relative;
+    }
+    .section1 p{
+        position:relative;
+        top: 50px;
+    }
+    .section1 span{
+        position:relative;
+        top: 70px;
+    }
+    .section1 button{
+        position:relative;
+        top: 130px;
+        width: 450px;
+       
+    }
+    .description h3 {
+        position: relative;
+        top: 150px;
+ 
+    }
+    .description p {
+        position: relative;
+        top: 150px;
+    }
+    .section2{
+        width: 600px;
+    }
+    .section2 img{
+        position: relative;
+        top:150px;
+        width: 500px;
+    }
+    .footer{
+        position: relative;
+        top: 150px;
+    }
+    .icons{
+        position: relative;
+        left: 10px;
+     
+      }
+        .mail{
+         margin-top: 40px;
+         position: relative;
+        }
+        .mail input{
+         width: 300px;
+         position: absolute;
+         left: 30px;
+      
+        }
+        .mail button{
+         width: 100px;
+         position: absolute;
+         left: 350px;
+        }
+        .mail h3{
+           font-size: 13px;
+        }
+        .footer{
+         position: relative;
+         height: 63vh;
+         overflow-x: hidden;
+         overflow: hidden;
+        }
+
+    }
