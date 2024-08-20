@@ -37,7 +37,6 @@
 .navbar__search:hover .navbar__s1_input input{
     display: block;
     top: 25px;
-
 }
 .navbar__s2 h2{
     margin-right: 220px;
@@ -275,6 +274,10 @@
          }
          .icons{
             color: black;
+         }
+         .navbar__search{
+            position: relative;
+            left: 20px;
          }
          /* .section1{
             position: relative;
